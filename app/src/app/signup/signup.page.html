@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>signup</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="logForm()">
+    <ion-item>
+      <ion-input placeholder="Nome completo" type="text" [(ngModel)]="signup.name" name="name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Email" type="text" [(ngModel)]="signup.email" name="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Data nascimento" type="date" [(ngModel)]="signup.birth" name="birth"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="senha" type="number" [(ngModel)]="signup.password" name="password"></ion-input>
+    </ion-item>
+    <ion-button (click)="register()" expand="block" fill="clear" shape="round" >
+      Click me
+    </ion-button>
+  </form>
+</ion-content>

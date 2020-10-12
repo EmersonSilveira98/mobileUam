@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>cadastrar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+      <ion-input placeholder="Nome completo" type="text" [(ngModel)]="consult.name" 
+        name="name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Data consulta" type="date" [(ngModel)]="consult.date" 
+        name="date"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Medico</ion-label>
+      <ion-select [(ngModel)]="doctorValue.value" placeholder="Selecione o Medico" >
+        <ion-select-option *ngFor="let doutores of doctor let i = index" 
+          [value]="i">{{doutores.name }}</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-button (click)="schedule()" expand="block" fill="clear" shape="round">
+      Click me
+    </ion-button>
+</ion-content>
