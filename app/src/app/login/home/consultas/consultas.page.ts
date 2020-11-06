@@ -19,6 +19,14 @@ export class ConsultasPage implements OnInit {
     {
       doctor: "Dr. Esther",
       date: "20/12/2020"
+    },
+    {
+      doctor: "Dr. Davi",
+      date: "04/07/2020"
+    },
+    { 
+      doctor: "Dr Luan",
+      date: "20/10/2020"
     }
   ]
   constructor() { }
