@@ -30,6 +30,7 @@ export class CadastrarPage implements OnInit {
 ]
   schedule(){
     axios[this.method](this.url, this.consult)
+    this.consult = ''
   }
   constructor() { }
 
