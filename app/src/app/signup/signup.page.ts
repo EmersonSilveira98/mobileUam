@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import axios from 'axios'
 
 @Component({
   selector: 'app-signup',
@@ -6,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./signup.page.scss'],
 })
 export class SignupPage implements OnInit {
-  signup = {};
-
+  user = {};
+  public url = 'http://localhost:3001/users'
+  public method = 'post'
   register(){
-    console.log(this.signup)
-  }
+    axios[this.method](this.url, this.user)
+    this.user= ''
+  } 
 
   constructor() { }
 

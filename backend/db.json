@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Emerson Silveira Aguiar",
+      "email": "emersonsilveira20@gmail.com",
+      "dtNascimento": "",
+      "password": "12345678"
+    },
+    {
+      "http://localhost:3001/users": "",
+      "id": 2
+    },
+    {
+      "name": "Emerson",
+      "email": "emersonsilveira2222",
+      "dtNascimento": "1998-05-17",
+      "password": 1234444,
+      "id": 3
+    },
+    {
+      "name": "SSSSS",
+      "email": "mmmm",
+      "dtNascimento": "1998-05-17",
+      "password": 111,
+      "id": 4
+    },
+    {
+      "name": "Emerson",
+      "date": "2020-11-20",
+      "horario": 20,
+      "id": 5
+    }
+  ]
+}
