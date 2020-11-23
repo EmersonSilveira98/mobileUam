@@ -7,16 +7,16 @@
 <ion-content>
   <form (ngSubmit)="logForm()">
     <ion-item>
-      <ion-input placeholder="Nome completo" type="text" [(ngModel)]="signup.name" name="name"></ion-input>
+      <ion-input placeholder="Nome completo" type="text" [(ngModel)]="user.name" name="name"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-input placeholder="Email" type="text" [(ngModel)]="signup.email" name="email"></ion-input>
+      <ion-input placeholder="Email" type="text" [(ngModel)]="user.email" name="email"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-input placeholder="Data nascimento" type="date" [(ngModel)]="signup.birth" name="birth"></ion-input>
+      <ion-input placeholder="Data nascimento" type="date" [(ngModel)]="user.dtNascimento" name="birth"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-input placeholder="senha" type="number" [(ngModel)]="signup.password" name="password"></ion-input>
+      <ion-input placeholder="senha" type="number" [(ngModel)]="user.password" name="password"></ion-input>
     </ion-item>
     <ion-button (click)="register()" expand="block" fill="clear" shape="round" >
       Click me
