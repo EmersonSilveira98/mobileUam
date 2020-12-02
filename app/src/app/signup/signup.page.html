@@ -3,7 +3,7 @@
     <ion-title>signup</ion-title>
   </ion-toolbar>
 </ion-header>
-
+ 
 <ion-content>
   <form (ngSubmit)="logForm()">
     <ion-item>
@@ -13,13 +13,16 @@
       <ion-input placeholder="Email" type="text" [(ngModel)]="user.email" name="email"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-input placeholder="Data nascimento" type="date" [(ngModel)]="user.dtNascimento" name="birth"></ion-input>
+      <ion-input placeholder="Data nascimento" type="date" [(ngModel)]="user.dtBirth" name="birth"></ion-input>
     </ion-item>
     <ion-item>
       <ion-input placeholder="senha" type="number" [(ngModel)]="user.password" name="password"></ion-input>
     </ion-item>
+    <ion-item>
+      <ion-input placeholder="senha" type="number" [(ngModel)]="user.confirmPassword" name="password"></ion-input>
+    </ion-item>
     <ion-button (click)="register()" expand="block" fill="clear" shape="round" >
-      Click me
+      Registrar
     </ion-button>
   </form>
 </ion-content>

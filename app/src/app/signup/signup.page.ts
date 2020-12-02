@@ -1,3 +1,4 @@
+import { Router, RouterLink } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import axios from 'axios'
 
@@ -8,14 +9,17 @@ import axios from 'axios'
 })
 export class SignupPage implements OnInit {
   user = {};
-  public url = 'http://localhost:3001/users'
+  public url = 'http://localhost:3333/signup'
   public method = 'post'
   register(){
-    axios[this.method](this.url, this.user)
-    this.user= ''
-  } 
+    axios.post(this.url, this.user)
+      .then(_ => {
+        this.router.navigateByUrl('');
+      })
+    this.user=''
+  }
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
