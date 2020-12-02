@@ -10,6 +10,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "json-server": "^0.16.2",
+    "jwt-simple": "^0.5.6",
     "knex": "^0.21.12",
     "mongoose": "^5.10.16",
     "nodemon": "^2.0.6",

@@ -7,6 +7,7 @@ import axios from 'axios'
   templateUrl: './signup.page.html',
   styleUrls: ['./signup.page.scss'],
 })
+
 export class SignupPage implements OnInit {
   user = {};
   public url = 'http://localhost:3333/signup'
