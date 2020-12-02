@@ -3,19 +3,18 @@
     <ion-title>login</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
   <div class="login">
     <img src="../../assets/icon/medical.png" alt="medical">
-    <ion-input placeholder="Digite o email" [(ngModel)]="email">
+    <ion-input placeholder="Digite o email" [(ngModel)]="user.email">
       <ion-icon name="mail-outline"></ion-icon>
     </ion-input>
-      <ion-input placeholder="Digite a senha" [(ngModel)]="password">
+      <ion-input placeholder="Digite a senha" type="password" [(ngModel)]="user.password">
         <ion-icon name="lock-closed-outline"></ion-icon>
       </ion-input>
-        <ion-button (click)="signin()" routerLink="/home">
-          SIGNIN
+        <ion-button (click)="signin()" >
+          CONECTE-SE
         </ion-button>
-        <ion-button routerLink="/signup"> SIGNUP  </ion-button>
+        <ion-button routerLink="/signup"> CADASTRE-SE  </ion-button>
       </div>
 </ion-content>
